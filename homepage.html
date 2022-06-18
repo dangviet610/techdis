@@ -1,0 +1,141 @@
+<html>
+	<head>
+		<title>Login</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="css.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
+
+	</head>
+
+	<body class="container-fluid ">
+		<div class="header">
+			<h4 style="color: white;">TECHDIS</h4>
+		</div>
+		<div class="navigation_bar ">
+			<ul>
+				<li><a class="active" href="#home">Home</a></li>
+				<li style="float: right"><a href="index.html"><i class='fa fa-sign-out' style='font-size:20px'></i></a></li>
+			  	<li style="float: right;">
+			  		<img src="photo.png" class="rounded-circle" alt="Name" style="height:35px; margin-top: 5px;">
+			  	</li>
+			  	<li style="float: right"><a href="index.html"><i class="fa fa-bell" style="font-size:20px " ></i></a></li>
+			</ul>
+			
+
+		</div>
+	
+		<div class="main">
+			<div class="main_content" >
+				<div class="navigation_bar ">
+					<ul>
+						<li><a class="active" href="#home">All Posts</a></li>
+						<li><a class="active" href="#home">Food</a></li>
+						<li><a class="active" href="#home">Business</a></li>
+						<li><a class="active" href="#home">Advertisement</a></li>
+						<li style="float: right">
+							<button type="button" class="btn btn-dark" style="margin-top: 6px;" data-bs-toggle="modal" data-bs-target="#ModalCreatePost">Create post</button>
+						</li>
+						<li style="float: right"><i class="fa fa-search" style="font-size:20px; color:white; margin: 15px 20px 5px 0;" ></i></li>
+
+					</ul>
+				</div>
+
+				<div class="row" style="margin: 10px 0px 10px 0px;">
+					<div class="col-md-5" style="background-color: white;padding-left: 0;">
+						<img src="imgpost.jpg" style="width: 100%;">
+					</div>
+
+					<div class="col-md-7" style="background-color: white; padding-top: 10px;">
+						<img src="photo.png" class="rounded-circle" alt="Name" style="height:50px ; float: left">
+						<h6 style="float:left; margin:0 0 0 10px; color: grey;">Dang Hoang Viet</h6><br>
+						<p style="color: grey; float: left; margin-left: 10px;">1 day ago - 1 min</p><br>
+						<h2 style="float:left; text-align:left;">How AI is changing personal data tracking</h2><br>
+						<p style="float:left; text-align: left;">To create and manage your own content open the Blog Manager by hovering over your blog feed and clicking Manage. Here you can create,...</p>
+						
+					</div>
+
+				</div>
+
+				<div class="row" style="margin: 10px 0px 10px 0px;">
+					<div class="col-md-5" style="background-color: white;padding-left: 0;">
+						<img src="imgpost.jpg" style="width: 100%;">
+					</div>
+
+					<div class="col-md-7" style="background-color: white; padding-top: 10px;">
+						<img src="photo.png" class="rounded-circle" alt="Name" style="height:50px ; float: left">
+						<h6 style="float:left; margin:0 0 0 10px; color: grey;">Dang Hoang Viet</h6><br>
+						<p style="color: grey; float: left; margin-left: 10px;">1 day ago - 1 min</p><br>
+						<h2 style="float:left; text-align:left;">How AI is changing personal data tracking</h2><br>
+						<p style="float:left; text-align: left;">To create and manage your own content open the Blog Manager by hovering over your blog feed and clicking Manage. Here you can create,...</p>
+						
+					</div>
+
+				</div>
+				<div class="row" style="margin: 10px 0px 10px 0px;">
+					<div class="col-md-5" style="background-color: white;padding-left: 0;">
+						<img src="imgpost.jpg" style="width: 100%;">
+					</div>
+
+					<div class="col-md-7" style="background-color: white; padding-top: 10px;">
+						<img src="photo.png" class="rounded-circle" alt="Name" style="height:50px ; float: left">
+						<h6 style="float:left; margin:0 0 0 10px; color: grey;">Dang Hoang Viet</h6><br>
+						<p style="color: grey; float: left; margin-left: 10px;">1 day ago - 1 min</p><br>
+						<h2 style="float:left; text-align:left;">How AI is changing personal data tracking</h2><br>
+						<p style="float:left; text-align: left;">To create and manage your own content open the Blog Manager by hovering over your blog feed and clicking Manage. Here you can create,...</p>
+						
+					</div>
+
+				</div>
+
+				<!-- The Modal -->
+				<div class="modal" id="ModalCreatePost">
+					<div class="modal-dialog modal-fullscreen">
+						<div class="modal-content">
+					      <!-- Modal body -->
+					    	<div class="modal-body" style="padding:100px 300px 50px 300px; text-align: center;">
+					    		<div style="margin-bottom: 100px;">
+					    			<img src="photo.png" class="rounded-circle" alt="Name" style="height:40px ; float: left;">
+									<h6 style="float:left; padding: 10px ;">Dang Hoang Viet</h6>
+					    		</div>
+					    		
+								<div id="editor" >
+									<h3>Add a Catchy Title</h3>
+									<p> Start writting your post here. Add images , videos, #hashtag and more</p>
+								</div>
+				                <script >
+				                        ClassicEditor
+				                                .create( document.querySelector( '#editor' ) )
+				                                .then( editor => {
+				                                        console.log( editor );
+				                                } )
+				                                .catch( error => {
+				                                        console.error( error );
+				                                } );
+				                </script>
+
+				                <div style="float:right; margin-top: 50px;">
+				                	<button type="button" class="btn btn-outline-secondary"  data-bs-dismiss="modal">Cancel</button>
+				                	<button type="button" class="btn btn-secondary" >Publish</button>
+				                </div>
+
+					    	</div>
+					    </div>
+					</div>
+				</div>
+
+				
+				
+				
+			</div>
+			
+		</div>
+
+	</body>
+
+
+</html>
